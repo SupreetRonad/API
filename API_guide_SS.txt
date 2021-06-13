@@ -1,0 +1,24 @@
+Guide from Sathvik Soya(eSign: 69420)
+
+1. Create python Virtual env
+	a. $ python3 -m venv /path/to/new/environment
+2. open git bash here(parent directory)
+3. $ source <foldername>/Scripts/activate
+4. $ touch Procfile
+	a. Inside Procfile 
+		web: gunicorn app:<python file name>		
+NOTE: - before running next command, make sure u pip install packages like gunicorn, Flask....
+
+5. $ pip freeze > requirements.txt
+NOTE: - Make sure ur python running version is 3.9.5(stable) - which can be checked in runtime.txt file
+
+6. $ git init
+7. $ git add .
+8. $ git commit -m "your message"
+9. $ heroku login
+10. $ heroku create
+NOTE: - optional---if u want to change the name of the default url ->>> $ heroku rename <new name>
+
+11. $ git push heroku master
+
+After every new change to take effect repeat steps from 6.

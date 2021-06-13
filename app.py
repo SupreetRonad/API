@@ -14,6 +14,13 @@ def home():
     # return render_template("home.html")
     return 'Sent from API'
     
+@app.route('/data', methods=['POST','GET'])
+def read():
+    # f = open("asset/data.txt", "r")
+    # ss = print(f.read)
+    with open('asset/data.txt') as f:
+        lines = f.read()
+    return lines
 
 if __name__ == '__main__':
     app.run(debug=True)
